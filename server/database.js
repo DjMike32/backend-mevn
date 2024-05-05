@@ -1,9 +1,8 @@
-import mysql2 from "mysql2";
+import { createPool } from "mysql2/promise";
 
-const db = mysql2.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "admin1234",
-  database: "mysql_users",
+export const pool = createPool({
+  host: process.env.HOST_NAME,
+  user: process.env.USER_NAME,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DATABASE_NAME,
 });
-export { db };
