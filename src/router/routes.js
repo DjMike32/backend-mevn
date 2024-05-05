@@ -2,13 +2,13 @@ import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [
   {
-    path: "/",
+    path: "/tasks2",
     alias: "/tasks",
     name: "tasks",
     component: () => import("../components/TaskList.vue"),
   },
   {
-    path: "/tasks/new",
+    path: "/",
     name: "tasks-new",
     component: () => import("../components/TaskForm.vue"),
   },
