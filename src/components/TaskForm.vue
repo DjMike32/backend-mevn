@@ -108,5 +108,4 @@
         <input type="text" id="job" v-model="updatedUser.job" />
         <button type="submit">Submit</button>
     </form>
-    <img src="../assets/vue.svg" alt="" draggable="true" />
 </template>
